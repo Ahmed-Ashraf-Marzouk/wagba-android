@@ -13,6 +13,6 @@ Wagba is a mobile application made using android (Java) and connected to firebas
 1. Check list of orders you have made 
 
 
-Demo (SCREEN RECORDING): [Link](https://youtu.be/xqGgIKHXcuI) 
-Demo narration: [Link](https://youtu.be/U_Xp3EK1hVE) 
-Demo narration + Firebase: [Link](https://youtu.be/DC7PgTM_2PY)
+Demo (SCREEN RECORDING): [Link](https://youtu.be/xqGgIKHXcuI) <br>
+Demo narration: [Link](https://youtu.be/U_Xp3EK1hVE) <br>
+Demo narration + Firebase: [Link](https://youtu.be/DC7PgTM_2PY) <br>
