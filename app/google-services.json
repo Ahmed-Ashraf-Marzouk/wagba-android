@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "617112175776",
+    "firebase_url": "https://wagba-abc0e-default-rtdb.firebaseio.com",
+    "project_id": "wagba-abc0e",
+    "storage_bucket": "wagba-abc0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617112175776:android:eb4fd9d61026accd75b5c5",
+        "android_client_info": {
+          "package_name": "com.example.courseproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617112175776-9d2mb0uh3vtksl48airk82rp53r0uh0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.courseproject",
+            "certificate_hash": "d4225bbf1e873f3c7bacd819dc3c0f5bfdd79e5c"
+          }
+        },
+        {
+          "client_id": "617112175776-ltiff4d333dljjpf20k9g7gm28keroeg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfpFwicgzhAzSVqBV6jogTgDZ1QX-9eJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617112175776-ltiff4d333dljjpf20k9g7gm28keroeg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

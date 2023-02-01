@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/logo"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/p_fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginStart="14dp"
+            android:text="Choose Gate"
+            android:gravity="center_vertical"
+            android:textSize="25dp"
+            />
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:singleSelection="true"
+            android:layout_marginEnd="10dp"
+            android:showDividers="middle"
+            >
+            <Button
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/gate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gate 3"
+                />
+            <Button
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/gate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gate 4"
+                />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginStart="14dp"
+            android:text="Choose Time"
+            android:gravity="center_vertical"
+            android:textSize="25dp"
+            />
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:singleSelection="true"
+            android:layout_marginEnd="10dp"
+            android:showDividers="middle"
+            >
+            <Button
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00 PM"
+                />
+            <Button
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:00 PM"
+                />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+    <TextView
+        android:id="@+id/payment_total_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="14dp"
+        android:layout_weight="2.2"
+        android:text="Total: $"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <Button
+                android:id="@+id/confirm_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserScreen">
+
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:id="@+id/user_profile_icon_frame">
+                                <com.google.android.material.appbar.MaterialToolbar
+                                    android:id="@+id/user_profile_icon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="?attr/actionBarSize"
+                                    app:navigationIcon="@drawable/account_circle"
+                                    android:clickable="true"
+                                    android:focusableInTouchMode="true"
+                                    />
+
+                        </FrameLayout>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.7"
+                            android:layout_height="55dp"
+                            android:src="@drawable/logo"
+                            android:id="@+id/logoo"
+                            />
+
+                        <com.google.android.material.appbar.MaterialToolbar
+                            android:id="@+id/order_history"
+                            android:layout_width="wrap_content"
+                            android:layout_height="?attr/actionBarSize"
+                            app:navigationIcon="@drawable/history"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            />
+                </LinearLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:layout_gravity="center">-->
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="5"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/logo" />-->
+<!--                </FrameLayout>-->
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="0.9"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:src="@drawable/shopping_cart" />-->
+<!--                </FrameLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+<!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:id="@+id/fragmentContainerView"-->
+<!--            android:name="com.example.courseproject.Restaurants_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="10"-->
+<!--            tools:layout="@layout/restaurant_item_list" />-->
+<!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:id="@+id/fragmentContainerView"-->
+<!--            android:name="com.example.courseproject.Restaurants_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="10"-->
+<!--            tools:layout="@layout/restaurant_item_list" />-->
+
+<!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:id="@+id/fragmentContainerView"-->
+<!--            android:name="com.example.courseproject.Cart_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="10"-->
+<!--            tools:layout="@layout/cart_item_list" />-->
+
+
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fragmentContainerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    tools:layout="" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:id="@+id/pay"/>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/navigation_tab">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:icon="@drawable/restaurants"
+
+                    />
+
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Menu"-->
+<!--                    android:icon="@drawable/restaurant_menu"-->
+<!--                    />-->
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cart"
+                    android:icon="@drawable/shopping_cart"
+                    />
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+</LinearLayout>
