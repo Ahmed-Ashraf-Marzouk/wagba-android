@@ -10,7 +10,6 @@
 1. Edit user profile information 
 1. Your ordering data is stored on Firebase 
 1. Check list of orders you have made 
-2. 
 ## Getting Started
 
 To set up a local development environment for WAGBA Android, follow these steps:
